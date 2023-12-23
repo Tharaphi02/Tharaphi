@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">
+            <i class="fa-solid fa-plane-departure"></i>
+            Landing
+        </a>
+        <button id="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active">Home</a></li>
+                <li><a href="#" class="nav-link">about</a></li>
+                <li><a href="#" class="nav-link">contact</a></li>
+                <li><a href="#" class="btn">Action</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(213, 55, 104, 0.81)" offset="0%"></stop><stop stop-color="rgba(218, 170, 82, 0.59)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,175L26.7,166.7C53.3,158,107,142,160,145.8C213.3,150,267,175,320,175C373.3,175,427,150,480,154.2C533.3,158,587,192,640,195.8C693.3,200,747,175,800,162.5C853.3,150,907,150,960,125C1013.3,100,1067,50,1120,29.2C1173.3,8,1227,17,1280,33.3C1333.3,50,1387,75,1440,87.5C1493.3,100,1547,100,1600,100C1653.3,100,1707,100,1760,87.5C1813.3,75,1867,50,1920,62.5C1973.3,75,2027,125,2080,141.7C2133.3,158,2187,142,2240,150C2293.3,158,2347,192,2400,175C2453.3,158,2507,92,2560,58.3C2613.3,25,2667,25,2720,58.3C2773.3,92,2827,158,2880,158.3C2933.3,158,2987,92,3040,70.8C3093.3,50,3147,75,3200,83.3C3253.3,92,3307,83,3360,104.2C3413.3,125,3467,175,3520,191.7C3573.3,208,3627,192,3680,154.2C3733.3,117,3787,58,3813,29.2L3840,0L3840,250L3813.3,250C3786.7,250,3733,250,3680,250C3626.7,250,3573,250,3520,250C3466.7,250,3413,250,3360,250C3306.7,250,3253,250,3200,250C3146.7,250,3093,250,3040,250C2986.7,250,2933,250,2880,250C2826.7,250,2773,250,2720,250C2666.7,250,2613,250,2560,250C2506.7,250,2453,250,2400,250C2346.7,250,2293,250,2240,250C2186.7,250,2133,250,2080,250C2026.7,250,1973,250,1920,250C1866.7,250,1813,250,1760,250C1706.7,250,1653,250,1600,250C1546.7,250,1493,250,1440,250C1386.7,250,1333,250,1280,250C1226.7,250,1173,250,1120,250C1066.7,250,1013,250,960,250C906.7,250,853,250,800,250C746.7,250,693,250,640,250C586.7,250,533,250,480,250C426.7,250,373,250,320,250C266.7,250,213,250,160,250C106.7,250,53,250,27,250L0,250Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(201, 113, 85, 0.5)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 0.58)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,50L26.7,70.8C53.3,92,107,133,160,154.2C213.3,175,267,175,320,166.7C373.3,158,427,142,480,141.7C533.3,142,587,158,640,137.5C693.3,117,747,58,800,41.7C853.3,25,907,50,960,58.3C1013.3,67,1067,58,1120,54.2C1173.3,50,1227,50,1280,75C1333.3,100,1387,150,1440,154.2C1493.3,158,1547,117,1600,95.8C1653.3,75,1707,75,1760,100C1813.3,125,1867,175,1920,175C1973.3,175,2027,125,2080,108.3C2133.3,92,2187,108,2240,95.8C2293.3,83,2347,42,2400,20.8C2453.3,0,2507,0,2560,20.8C2613.3,42,2667,83,2720,83.3C2773.3,83,2827,42,2880,20.8C2933.3,0,2987,0,3040,12.5C3093.3,25,3147,50,3200,54.2C3253.3,58,3307,42,3360,45.8C3413.3,50,3467,75,3520,108.3C3573.3,142,3627,183,3680,183.3C3733.3,183,3787,142,3813,120.8L3840,100L3840,250L3813.3,250C3786.7,250,3733,250,3680,250C3626.7,250,3573,250,3520,250C3466.7,250,3413,250,3360,250C3306.7,250,3253,250,3200,250C3146.7,250,3093,250,3040,250C2986.7,250,2933,250,2880,250C2826.7,250,2773,250,2720,250C2666.7,250,2613,250,2560,250C2506.7,250,2453,250,2400,250C2346.7,250,2293,250,2240,250C2186.7,250,2133,250,2080,250C2026.7,250,1973,250,1920,250C1866.7,250,1813,250,1760,250C1706.7,250,1653,250,1600,250C1546.7,250,1493,250,1440,250C1386.7,250,1333,250,1280,250C1226.7,250,1173,250,1120,250C1066.7,250,1013,250,960,250C906.7,250,853,250,800,250C746.7,250,693,250,640,250C586.7,250,533,250,480,250C426.7,250,373,250,320,250C266.7,250,213,250,160,250C106.7,250,53,250,27,250L0,250Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 0.69)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 0.6)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,125L26.7,116.7C53.3,108,107,92,160,108.3C213.3,125,267,175,320,175C373.3,175,427,125,480,120.8C533.3,117,587,158,640,175C693.3,192,747,183,800,150C853.3,117,907,58,960,58.3C1013.3,58,1067,117,1120,133.3C1173.3,150,1227,125,1280,129.2C1333.3,133,1387,167,1440,166.7C1493.3,167,1547,133,1600,125C1653.3,117,1707,133,1760,116.7C1813.3,100,1867,50,1920,29.2C1973.3,8,2027,17,2080,54.2C2133.3,92,2187,158,2240,175C2293.3,192,2347,158,2400,129.2C2453.3,100,2507,75,2560,70.8C2613.3,67,2667,83,2720,104.2C2773.3,125,2827,150,2880,145.8C2933.3,142,2987,108,3040,91.7C3093.3,75,3147,75,3200,100C3253.3,125,3307,175,3360,175C3413.3,175,3467,125,3520,125C3573.3,125,3627,175,3680,175C3733.3,175,3787,125,3813,100L3840,75L3840,250L3813.3,250C3786.7,250,3733,250,3680,250C3626.7,250,3573,250,3520,250C3466.7,250,3413,250,3360,250C3306.7,250,3253,250,3200,250C3146.7,250,3093,250,3040,250C2986.7,250,2933,250,2880,250C2826.7,250,2773,250,2720,250C2666.7,250,2613,250,2560,250C2506.7,250,2453,250,2400,250C2346.7,250,2293,250,2240,250C2186.7,250,2133,250,2080,250C2026.7,250,1973,250,1920,250C1866.7,250,1813,250,1760,250C1706.7,250,1653,250,1600,250C1546.7,250,1493,250,1440,250C1386.7,250,1333,250,1280,250C1226.7,250,1173,250,1120,250C1066.7,250,1013,250,960,250C906.7,250,853,250,800,250C746.7,250,693,250,640,250C586.7,250,533,250,480,250C426.7,250,373,250,320,250C266.7,250,213,250,160,250C106.7,250,53,250,27,250L0,250Z"></path>
+        </svg>
+
+        <div class="container">
+
+            <div class="hero_content">
+                <p>what business are your?</p>
+                <h1>Main Hero message to sell yourself!</h1>
+                <p>Sub-hero message, not too long and not too short . Make it just right!</p>
+                <button class="btn">Subscribe</button>
+            </div>
+
+            <div class="hero_img">
+                <img src="img/undraw_learning_sketching_nd4f.svg" alt="">
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- about section -->
+    <section class="about">
+        <h1 class="title">about us</h1>
+        <div class="container">
+            <div class="about_first_content">
+                <img src="img/undraw_summer_1wi4.png" alt="">
+                <div>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic optio quis molestiae laborum sequi porro sed velit dolore impedit cupiditate blanditiis consequatur autem, iste unde voluptas assumenda doloribus debitis reprehenderit?
+                    </p>
+                    <p>Images from: <a href="undraw.co">undraw.co</a></p>
+                </div>
+            </div>
+            <div class="about_last_content">
+                <img src="img/undraw_World_re_768g.png" alt="">
+                <div>
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam perferendis cumque velit! Repellat adipisci reiciendis ad quia assumenda libero reprehenderit nostrum, aliquid qui ab excepturi rem praesentium maxime repudiandae optio consequuntur soluta modi aliquam officiis voluptatem tenetur dolorem at fugit.
+                    </p>
+                    <p>Images from: <a href="undraw.co">undraw.co</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section class="project">
+        <h1 class="title">project</h1>
+        <div class="container">
+            <div class="card">
+                <p class="card-info">getting started</p>
+                <h1 class="card-title">Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi atque, ad quidem sapiente dolores illum.</p>
+                <a href="#" class="btn btn-gradient">See more</a>
+            </div>
+            <div class="card">
+                <p class="card-info">getting started</p>
+                <h1 class="card-title">Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi atque, ad quidem sapiente dolores illum.</p>
+                <a href="" class="btn btn-gradient">See more</a>
+            </div>
+            <div class="card">
+                <p class="card-info">getting started</p>
+                <h1 class="card-title">Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi atque, ad quidem sapiente dolores illum.</p>
+                <a href="" class="btn btn-gradient">See more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- pricing -->
+    <section class="pricing">
+        <h1 class="title">Pricing</h1>
+        <div class="container">
+            <div class="card">
+                <h2 class="card-title">Free</h2>
+                <ul>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul>
+                <p class="price-label">&#163; for per user</p>
+                <a href="#" class="btn btn-gradient">See More</a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">Free</h2>
+                <ul>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul>
+                <p class="price-label">&#163; for per user</p>
+                <a href="#" class="btn btn-gradient">See More</a>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">Free</h2>
+                <ul>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul>
+                <p class="price-label">&#163; for per user</p>
+                <a href="#" class="btn btn-gradient">See More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact">
+        <svg id="wave" style="transition: 0.3s" viewBox="0 0 1440 250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(213, 55, 104, 0.81)" offset="0%"></stop><stop stop-color="rgba(218, 170, 82, 0.59)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,175L26.7,166.7C53.3,158,107,142,160,145.8C213.3,150,267,175,320,175C373.3,175,427,150,480,154.2C533.3,158,587,192,640,195.8C693.3,200,747,175,800,162.5C853.3,150,907,150,960,125C1013.3,100,1067,50,1120,29.2C1173.3,8,1227,17,1280,33.3C1333.3,50,1387,75,1440,87.5C1493.3,100,1547,100,1600,100C1653.3,100,1707,100,1760,87.5C1813.3,75,1867,50,1920,62.5C1973.3,75,2027,125,2080,141.7C2133.3,158,2187,142,2240,150C2293.3,158,2347,192,2400,175C2453.3,158,2507,92,2560,58.3C2613.3,25,2667,25,2720,58.3C2773.3,92,2827,158,2880,158.3C2933.3,158,2987,92,3040,70.8C3093.3,50,3147,75,3200,83.3C3253.3,92,3307,83,3360,104.2C3413.3,125,3467,175,3520,191.7C3573.3,208,3627,192,3680,154.2C3733.3,117,3787,58,3813,29.2L3840,0L3840,250L3813.3,250C3786.7,250,3733,250,3680,250C3626.7,250,3573,250,3520,250C3466.7,250,3413,250,3360,250C3306.7,250,3253,250,3200,250C3146.7,250,3093,250,3040,250C2986.7,250,2933,250,2880,250C2826.7,250,2773,250,2720,250C2666.7,250,2613,250,2560,250C2506.7,250,2453,250,2400,250C2346.7,250,2293,250,2240,250C2186.7,250,2133,250,2080,250C2026.7,250,1973,250,1920,250C1866.7,250,1813,250,1760,250C1706.7,250,1653,250,1600,250C1546.7,250,1493,250,1440,250C1386.7,250,1333,250,1280,250C1226.7,250,1173,250,1120,250C1066.7,250,1013,250,960,250C906.7,250,853,250,800,250C746.7,250,693,250,640,250C586.7,250,533,250,480,250C426.7,250,373,250,320,250C266.7,250,213,250,160,250C106.7,250,53,250,27,250L0,250Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(201, 113, 85, 0.5)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 0.58)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,50L26.7,70.8C53.3,92,107,133,160,154.2C213.3,175,267,175,320,166.7C373.3,158,427,142,480,141.7C533.3,142,587,158,640,137.5C693.3,117,747,58,800,41.7C853.3,25,907,50,960,58.3C1013.3,67,1067,58,1120,54.2C1173.3,50,1227,50,1280,75C1333.3,100,1387,150,1440,154.2C1493.3,158,1547,117,1600,95.8C1653.3,75,1707,75,1760,100C1813.3,125,1867,175,1920,175C1973.3,175,2027,125,2080,108.3C2133.3,92,2187,108,2240,95.8C2293.3,83,2347,42,2400,20.8C2453.3,0,2507,0,2560,20.8C2613.3,42,2667,83,2720,83.3C2773.3,83,2827,42,2880,20.8C2933.3,0,2987,0,3040,12.5C3093.3,25,3147,50,3200,54.2C3253.3,58,3307,42,3360,45.8C3413.3,50,3467,75,3520,108.3C3573.3,142,3627,183,3680,183.3C3733.3,183,3787,142,3813,120.8L3840,100L3840,250L3813.3,250C3786.7,250,3733,250,3680,250C3626.7,250,3573,250,3520,250C3466.7,250,3413,250,3360,250C3306.7,250,3253,250,3200,250C3146.7,250,3093,250,3040,250C2986.7,250,2933,250,2880,250C2826.7,250,2773,250,2720,250C2666.7,250,2613,250,2560,250C2506.7,250,2453,250,2400,250C2346.7,250,2293,250,2240,250C2186.7,250,2133,250,2080,250C2026.7,250,1973,250,1920,250C1866.7,250,1813,250,1760,250C1706.7,250,1653,250,1600,250C1546.7,250,1493,250,1440,250C1386.7,250,1333,250,1280,250C1226.7,250,1173,250,1120,250C1066.7,250,1013,250,960,250C906.7,250,853,250,800,250C746.7,250,693,250,640,250C586.7,250,533,250,480,250C426.7,250,373,250,320,250C266.7,250,213,250,160,250C106.7,250,53,250,27,250L0,250Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 0.69)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 0.6)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,125L26.7,116.7C53.3,108,107,92,160,108.3C213.3,125,267,175,320,175C373.3,175,427,125,480,120.8C533.3,117,587,158,640,175C693.3,192,747,183,800,150C853.3,117,907,58,960,58.3C1013.3,58,1067,117,1120,133.3C1173.3,150,1227,125,1280,129.2C1333.3,133,1387,167,1440,166.7C1493.3,167,1547,133,1600,125C1653.3,117,1707,133,1760,116.7C1813.3,100,1867,50,1920,29.2C1973.3,8,2027,17,2080,54.2C2133.3,92,2187,158,2240,175C2293.3,192,2347,158,2400,129.2C2453.3,100,2507,75,2560,70.8C2613.3,67,2667,83,2720,104.2C2773.3,125,2827,150,2880,145.8C2933.3,142,2987,108,3040,91.7C3093.3,75,3147,75,3200,100C3253.3,125,3307,175,3360,175C3413.3,175,3467,125,3520,125C3573.3,125,3627,175,3680,175C3733.3,175,3787,125,3813,100L3840,75L3840,250L3813.3,250C3786.7,250,3733,250,3680,250C3626.7,250,3573,250,3520,250C3466.7,250,3413,250,3360,250C3306.7,250,3253,250,3200,250C3146.7,250,3093,250,3040,250C2986.7,250,2933,250,2880,250C2826.7,250,2773,250,2720,250C2666.7,250,2613,250,2560,250C2506.7,250,2453,250,2400,250C2346.7,250,2293,250,2240,250C2186.7,250,2133,250,2080,250C2026.7,250,1973,250,1920,250C1866.7,250,1813,250,1760,250C1706.7,250,1653,250,1600,250C1546.7,250,1493,250,1440,250C1386.7,250,1333,250,1280,250C1226.7,250,1173,250,1120,250C1066.7,250,1013,250,960,250C906.7,250,853,250,800,250C746.7,250,693,250,640,250C586.7,250,533,250,480,250C426.7,250,373,250,320,250C266.7,250,213,250,160,250C106.7,250,53,250,27,250L0,250Z"></path>
+        </svg>
+        <div class="container">
+            <h1 class="title">call to action</h1>
+            <p>main hero message</p>
+            <a href="#" class="btn">contact Us</a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="box">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    Landing
+                </a>
+            </div>
+            <div class="box">
+                <h3>links</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>legal</h3>
+                <ul>
+                    <li><a href="#">terms</a></li>
+                    <li><a href="#">privacy</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>social</h3>
+                <ul>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">linkedin</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>company</h3>
+                <ul>
+                    <li><a href="#">offical blog</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div id="up">
+        <i class="fa-solid fa-up-long"></i>
+    </div>
+
+    <!-- script -->
+    <script src="javascript/script.js"></script>
+</body>
+</html>
